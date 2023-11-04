@@ -24,11 +24,7 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        views = [
-            redView,
-            yellowView,
-            greenView
-        ]
+        views = [redView, yellowView, greenView]
         
         for view in views {
             view.alpha = 0.1
@@ -51,9 +47,16 @@ final class ViewController: UIViewController {
             let previousView = views[currentViewIndex]
             previousView.alpha = 0.1
             
-            currentViewIndex = (
-                currentViewIndex + 1
-            ) % views.count
+//            currentViewIndex += 1
+//            
+//            if currentViewIndex >= views.count {
+//                currentViewIndex = 0
+//            }
+//            
+//            let currentView = views[currentViewIndex]
+//            currentView.alpha = 1.0
+            
+            currentViewIndex = (currentViewIndex + 1) % views.count
             let currentView = views[currentViewIndex]
             currentView.alpha = 1.0
         }
