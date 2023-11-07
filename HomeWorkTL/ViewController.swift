@@ -28,7 +28,7 @@ final class ViewController: UIViewController {
         
         for view in views {
             view.alpha = 0.1
-            view.layer.cornerRadius = 75
+            view.layer.cornerRadius = 50
         }
         
         button.layer.cornerRadius = 20
