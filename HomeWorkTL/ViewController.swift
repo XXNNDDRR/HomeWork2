@@ -52,9 +52,6 @@ final class ViewController: UIViewController {
 //            if currentViewIndex >= views.count {
 //                currentViewIndex = 0
 //            }
-//            
-//            let currentView = views[currentViewIndex]
-//            currentView.alpha = 1.0
             
             currentViewIndex = (currentViewIndex + 1) % views.count
             let currentView = views[currentViewIndex]
