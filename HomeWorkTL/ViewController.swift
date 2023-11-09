@@ -47,13 +47,12 @@ final class ViewController: UIViewController {
             let previousView = views[currentViewIndex]
             previousView.alpha = 0.1
             
-//            currentViewIndex += 1
-//            
-//            if currentViewIndex >= views.count {
-//                currentViewIndex = 0
-//            }
+            currentViewIndex += 1
             
-            currentViewIndex = (currentViewIndex + 1) % views.count
+            if currentViewIndex >= views.count {
+                currentViewIndex = 0
+            }
+            
             let currentView = views[currentViewIndex]
             currentView.alpha = 1.0
         }
